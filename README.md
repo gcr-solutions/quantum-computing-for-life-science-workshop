@@ -1,1 +1,0 @@
-# quantum-computing-for-life-science
