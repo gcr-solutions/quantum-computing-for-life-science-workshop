@@ -1,6 +1,6 @@
-baseURL = "https://gcr-solutions.github.io/recommender-system-dev-workshop/"
+baseURL = "https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/"
 languageCode = "en-us"
-title = "Recommender System Solution"
+title = "Quantum Computing Solution"
 theme = "hugo-theme-learn"
 contentDir = "../docs"
 canonifyURLs = true
