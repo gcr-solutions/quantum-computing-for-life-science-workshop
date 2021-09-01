@@ -1,11 +1,11 @@
 ---
-title: Recommender System Solution Workshop (Beijing/Ningxia Region)
+title: Quantum Computing For Life Science Workshop
 chapter: true
 ---
 
-# GCR Recommender System Solution
+# Quantum Computing For Life Science Solution
 
-Amazon Recommender System Solution is a cloud-native recommendation solution for different scenarios. This solution is suitable for customers with needs for building the recommender systems in different scenarios, like news, movies, TV, travelings, education and so on. This solution is designed with both flexibility and integrity. No matter you just start to build a recommender system or on the way , you can use this solution to speed up the process, save time and cost from the complete-system perspective. It is an open-source project in GitHub, anyone can contribute to features or adding more related solutions.
+Qauntum Computing For Life Science Solution is a cloud-native recommendation solution for different scenarios. This solution is suitable for customers with needs for building the recommender systems in different scenarios, like news, movies, TV, travelings, education and so on. This solution is designed with both flexibility and integrity. No matter you just start to build a recommender system or on the way , you can use this solution to speed up the process, save time and cost from the complete-system perspective. It is an open-source project in GitHub, anyone can contribute to features or adding more related solutions.
 
 ![What is Recommender System](/images/what-is-recsys.png)
 

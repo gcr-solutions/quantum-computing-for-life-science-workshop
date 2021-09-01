@@ -1,5 +1,5 @@
 ---
-title: Prerequisite 
+title: Drug Discovery
 weight: 20
 ---
 
