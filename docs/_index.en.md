@@ -13,17 +13,11 @@ with needs to evaluate the possible useful cases of quantum computing in their i
 start to consider this new technology or on the way, you can use this solution to speed up the process, save
 time and cost. It is an open-source projects, anyone can contribute to features of adding more related solutions.
 
-![What is Recommender System](/images/what-is-recsys.png)
+![Application of Quantum Computing](/images/application-of-qc.png)
 
-### Recommender System Solution will build a cloud-native recommender system for you from three aspects 
-
-#### Online Services
-
-The core services of the recommender system are constructed using Amazon EKS, including user portrait, data loader, event notice, recall, rank, filter and so on. Some services will interact with redis. This design provides the customers with online service the recommender system based on microservice architecture.
-#### Offline Logic
-
-The offline logic is implemented using AWS Step Functions and Amazon Sagemaker. This includes data preprocess, model training, model validation, batch process and so on. Whenever new files or models are generated, the online services will be noticed to reload.
-
-#### End-to-end Development
-
-The CI/CD of system is implemented using AWS CodeBuild and Argo CD. This design helps the customers deploy the latest software into the production environment.
+Biology is one of the science categories that will be directly impacted by quantum. This technology will 
+impact industry verticals such as drug discovery, genetic engineering.
+Quantum computers represent a paradigm shift in computation. 
+We are entering a fascinating period in the development of quantum computers. 
+As this technology is still in such an early phase, it may be that its true impact is not even fully understood yet. 
+This makes this field even more fascinating to follow.
