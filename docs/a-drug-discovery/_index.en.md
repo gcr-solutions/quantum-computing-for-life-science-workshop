@@ -19,13 +19,14 @@ by approximately 40 percent and cost for care of patients by $367 billion a year
 ![CADD](/images/cadd.png)
 
 Innovation and advancements in computer-aided drug design (CADD) helps increase the productivity in
-drug research and development. Breakthroughs in artificial intelligence (AI), such as 
-Deepmind’s celebrated protein folding algorithm
-[3], still rely on statistical models running on classical comput-
-ers which are, for example, limited in modelling quantum
-mechanical systems such as protein structures. However, hopes
-for a literal quantum leap in research productivity lie in the
-development of quantum computers (QC).
+drug research and development. Breakthroughs in artificial intelligence (AI) still rely on statistical 
+models running on classical computers. These devices are limited in modelling quantum mechanical systems 
+such as protein structures. However, hopes for a literal quantum leap in research productivity lie 
+in the development of quantum computers. 
 
 ![CADD-QC](/images/cadd-qc.png)
 
+Researchers have listed the quantum techniques that can be applied to the components in the general workflow
+of drug discovery process. As the above image shown, both the structured-based methods and ligand-based methods
+can be beneficial from the techniques in noisy intermediate scale quantum (NISQ) devices and fault-tolerant 
+quantum computing devices.
