@@ -5,7 +5,13 @@ chapter: true
 
 # Quantum Computing For Life Science Solution
 
-Qauntum Computing For Life Science Solution is a cloud-native recommendation solution for different scenarios. This solution is suitable for customers with needs for building the recommender systems in different scenarios, like news, movies, TV, travelings, education and so on. This solution is designed with both flexibility and integrity. No matter you just start to build a recommender system or on the way , you can use this solution to speed up the process, save time and cost from the complete-system perspective. It is an open-source project in GitHub, anyone can contribute to features or adding more related solutions.
+Quantum Computing For Life Science Solution is a cloud-native solution for the application of quantum computing
+technology in different aspects of life science. This solution is trying to bridge the gap between the industrial
+knowledge and the novel computation model provided by the quantum technologies. This solution will continually 
+implement the Proof of Concepts (PoC) based on the recent publications or reports. It is suitable for customers
+with needs to evaluate the possible useful cases of quantum computing in their industries. No matter you just
+start to consider this new technology or on the way, you can use this solution to speed up the process, save
+time and cost. It is an open-source projects, anyone can contribute to features of adding more related solutions.
 
 ![What is Recommender System](/images/what-is-recsys.png)
 
