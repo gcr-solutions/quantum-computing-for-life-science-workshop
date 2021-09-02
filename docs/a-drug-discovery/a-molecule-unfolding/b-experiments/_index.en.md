@@ -1,5 +1,5 @@
 ---
-title: Workspace Setup
+title: Experiments
 weight: 20
 ---
 
