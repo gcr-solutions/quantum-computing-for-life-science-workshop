@@ -1,17 +1,41 @@
 ---
-title: Set Up Your Envrionments (LiuYong)
+title: Set Up Your Envrionments
 weight: 31
 ---
 
-1. In the Cloud9 workspace, click the grey circle button (in top right corner) and select **Manage EC2 Instance**.
+## Create A Sagemaker Notebook
 
-    ![Cloud9 Manage EC2 Instance](/images/cloud9-manage-ec2.png)
+1. Go to AWS CloudForamtion [link](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/template)
 
-2. EC2 dashboard will be opened, select the "aws-cloud9-gcr-rs-dev-workshop-xxx" instance, then choose **Actions / Security / Modify IAM Role**
+fill **Amazon S3 URL**: `https://aws-gcr-rs-sol-workshop-ap-northeast-1-common.s3.ap-northeast-1.amazonaws.com/qc/gcr-sol-qc.yaml`
 
-    ![EC2 Modify Role](/images/ec2-modify-role.png)
 
-3. Choose **gcr-rs-dev-workshop-admin** from the **IAM Role** drop down, and select **Save**
+ ![CloudForamtion Create](/images/qc-setup-cf-s3url.png)
 
-    ![EC2 Modify Role](/images/ec2-select-role.png)
 
+2. Click "Next", fill **Stack name**: `gcr-qc`
+
+ ![CloudForamtion Name](/images/qc-cf-name.png)
+
+
+3. Click button "Next" -> "Next", and check the checkbox
+
+ ![CloudForamtion checkbox](/images/qc-cf-checkbox.png)
+
+4. Click button "Create Stack"
+
+
+5. Wait CloudFormation deployment complete
+   
+   {{% notice info %}}
+   This will take about 6 minutes to provision
+   {{% /notice %}} 
+
+6. Find the link of notebook
+
+ ![CloudForamtion output](/images/qc-cf-nblink.png)
+
+7. Click and open the link
+
+ ![Notebook](/images/qc-notebook.png)
+ 
