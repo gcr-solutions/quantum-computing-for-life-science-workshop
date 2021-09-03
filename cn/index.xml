@@ -8,9 +8,12 @@ Region Subnet us-west-2 Default in us-west-2a ap-south-1 Default in ap-south-1a 
 AWS IAM AMAZON S3 AMAZON EKS AWS SecretsManager AWS CodeBuild AWS EFS AWS EC2 AWS Elasticache AWS CloudWatch AWS AutoScaling AWS SSM AWS KMS AWS AutoScaling AWS CloudFormation 首先打开 策略链接, 复制 gcr-rs-role.json 文件中的内容。
 打开创建策略的 链接, 在 JSON 栏中粘贴上一步复制的内容，注意: 请将 &amp;lt;account_id&amp;gt; 改为您的AWS 账户 ID。完成后点击下一步。
 在策略名字上输入 gcr-rs-dev-workshop-admin-policy， 点击创建策略。
-点击创建 IAM 角色的链接, 确认选择了AWS服务和EC2，然后点击下一步查看权限。</description></item><item><title>附加 IAM 角色</title><link>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/a-environment/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/a-environment/readme/</guid><description> 在 Cloud9 工作空间中，单击灰色圆圈按钮（右上角）并点击 管理 EC2 实例。
-在 EC2 仪表板中选择“aws-cloud9-gcr-rs-dev-workshop-xxx”实例，然后点击 Actions / Security / Modify IAM Role
-从 IAM 角色 下拉列表中选择 gcr-rs-dev-workshop-admin，然后点击 保存</description></item><item><title>创建 SSH 密钥</title><link>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/d-analysis/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/d-analysis/readme/</guid><description>运行以下命令在 Cloud9 中生成 SSH 密钥，此密钥将允许以 ssh 方式访问工作节点实例。
+点击创建 IAM 角色的链接, 确认选择了AWS服务和EC2，然后点击下一步查看权限。</description></item><item><title>创建 SSH 密钥</title><link>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/d-analysis/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/d-analysis/readme/</guid><description>运行以下命令在 Cloud9 中生成 SSH 密钥，此密钥将允许以 ssh 方式访问工作节点实例。
 ssh-keygen 按回车 3次以采用默认选择
 将公钥上传到您的 EC2 实例：
-aws ec2 import-key-pair --key-name &amp;#34;gcr-rs-dev-workshop-key&amp;#34; --public-key-material file://~/.ssh/id_rsa.pub</description></item></channel></rss>
+aws ec2 import-key-pair --key-name &amp;#34;gcr-rs-dev-workshop-key&amp;#34; --public-key-material file://~/.ssh/id_rsa.pub</description></item><item><title>设置环境</title><link>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/a-environment/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gcr-solutions.github.io/quantum-computing-for-life-science-workshop/cn/a-drug-discovery/a-molecule-unfolding/b-experiments/a-environment/readme/</guid><description>创建 Sagemaker 笔记本 转到 AWS CloudForamtion link 填写 Amazon S3 URL: https://aws-gcr-rs-sol-workshop-ap-northeast-1-common.s3.ap-northeast-1.amazonaws.com/qc/gcr-sol-qc.yaml
+点击 &amp;ldquo;Next&amp;rdquo;, 填写 Stack name: gcr-qc 点击按钮 &amp;ldquo;Next&amp;rdquo; -&amp;gt; &amp;ldquo;Next&amp;rdquo;, 勾选下面勾选框 点击按钮 &amp;ldquo;Create Stack&amp;rdquo;
+等待 CloudForamtion 部署完成
+需要等待 6 分钟左右
+从输出中找到记事本链接
+点击并打开记事本链接</description></item></channel></rss>
