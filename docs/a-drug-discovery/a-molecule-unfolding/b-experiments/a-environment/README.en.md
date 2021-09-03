@@ -1,6 +1,6 @@
 ---
 title: Set Up Your Envrionments (LiuYong)
-weight: 3
+weight: 31
 ---
 
 1. In the Cloud9 workspace, click the grey circle button (in top right corner) and select **Manage EC2 Instance**.

@@ -1,6 +1,6 @@
 ---
-title: Workspace Setup
-weight: 20
+title: Clean Up
+weight: 40
 ---
 
 This section includes following steps:
