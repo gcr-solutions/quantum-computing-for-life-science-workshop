@@ -1,17 +1,40 @@
 ---
-title: 附加 IAM 角色
-weight: 3
+title: 设置环境
+weight: 31
 ---
 
-1. 在 Cloud9 工作空间中，单击灰色圆圈按钮（右上角）并点击 **管理 EC2 实例**。 
+## 创建 Sagemaker 笔记本
 
-    ![Cloud9 Manage EC2 Instance](/images/cloud9-manage-ec2.png)
+1. 转到 AWS CloudForamtion [link](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/template)
 
-2. 在 EC2 仪表板中选择“aws-cloud9-gcr-rs-dev-workshop-xxx”实例，然后点击 **Actions / Security / Modify IAM Role** 
+填写 **Amazon S3 URL**: `https://aws-gcr-rs-sol-workshop-ap-northeast-1-common.s3.ap-northeast-1.amazonaws.com/qc/gcr-sol-qc.yaml`
 
-    ![EC2 Modify Role](/images/ec2-modify-role.png)
 
-3. 从 **IAM 角色** 下拉列表中选择 **gcr-rs-dev-workshop-admin**，然后点击 **保存** 
+ ![CloudForamtion Create](/images/qc-setup-cf-s3url.png)
 
-    ![EC2 Modify Role](/images/ec2-select-role.png)
 
+2. 点击 "Next", 填写 **Stack name**: `gcr-qc`
+
+ ![CloudForamtion Name](/images/qc-cf-name.png)
+
+
+3. 点击按钮 "Next" -> "Next", 勾选下面勾选框
+
+ ![CloudForamtion checkbox](/images/qc-cf-checkbox.png)
+
+4. 点击按钮 "Create Stack"
+
+5. 等待 CloudForamtion 部署完成
+   
+   {{% notice info %}}
+   需要等待 6 分钟左右
+   {{% /notice %}} 
+
+6. 从输出中找到记事本链接
+
+ ![CloudForamtion output](/images/qc-cf-nblink.png)
+
+7. 点击并打开记事本链接
+
+ ![Notebook](/images/qc-notebook.png)
+ 
