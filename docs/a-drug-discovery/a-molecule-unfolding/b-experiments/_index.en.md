@@ -3,10 +3,9 @@ title: Experiments
 weight: 30
 ---
 
-This section includes following steps:
+This section helps you carry out experiments using quantum annealer and includes following steps:
 
-- [AWS Cloud9](./cloud9/readme)
-- [Create an IAM role](./create-role/readme)
-- [Attach the IAM role](./attach-role/readme)
-- [Update IAM settings](./update-role-settings/readme)
-- [Create an SSH key](./create-ssh-key/readme)
+- [Prepare Environments](./a-environment/readme)
+- [Build The Model For Molecule Unfolding](./b-model/readme)
+- [Optimize The Model Using Quantum Annealer](./c-optimization/readme)
+- [Analyze The Final Results](./d-analysis/readme)
