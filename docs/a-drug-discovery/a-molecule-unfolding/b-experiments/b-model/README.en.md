@@ -21,7 +21,8 @@ idea is graphically reported in the following figure.
 
 ## Formulation
 
-debug 1.1
+debug 1.2
+
 $\mathcal{N}(0,\,1)$
 
 <body>
