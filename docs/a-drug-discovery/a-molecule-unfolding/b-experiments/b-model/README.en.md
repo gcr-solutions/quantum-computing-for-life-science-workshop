@@ -15,10 +15,13 @@ idea is graphically reported in the following figure.
 
  ![Rotatable Bonds](/images/rotatable-bonds.png)
 
+ As it indicates, the objective of MU is to find the shape of the ligand that can maximizes 
+ the molecular volume. The shape of the ligand can be expressed as the unfolded shape of the
+  ligand (the torsion configuration of all the rotatable bonds).
+
+## Formulation
 
 ## Quantum Annealing
-
-## HUBO Formulation 
 
 ## Prepare For Quantum Anealing
 
