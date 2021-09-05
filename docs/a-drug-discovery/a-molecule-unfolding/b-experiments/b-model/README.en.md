@@ -21,6 +21,9 @@ idea is graphically reported in the following figure.
 
 ## Formulation
 
+debug 1.1
+$\mathcal{N}(0,\,1)$
+
 <body>
 <p>
   When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
