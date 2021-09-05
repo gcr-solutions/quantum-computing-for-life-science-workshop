@@ -1,9 +1,31 @@
 ---
-title: Build Models For Molecule Unfolding
+title: Build Models 
 weight: 32
 ---
 
-AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal.
+## Problem Definition
+
+In this problem, the ligand is considered as a flexible set of atoms. Strictly speaking, 
+it can be seen as a set of chemical bonds (edges). These bonds have fixed length and 
+only a subset of them are rotatable. Because there are some rotatable bonds (torsions)
+, the molecule is split into different disjointed fragments. Take one bond for instance, 
+the rightmost rotatable one, it splits the molecule into the left and right fragments. 
+These fragments can rotate independently from each other around the axis of the bond. This 
+idea is graphically reported in the following figure. 
+
+ ![Rotatable Bonds](/images/rotatable-bonds.png)
+
+
+## Quantum Annealing
+
+## HUBO Formulation 
+
+## Prepare For Quantum Anealing
+
+
+
+
+
 
 ## Create new Cloud9 IDE environment
 

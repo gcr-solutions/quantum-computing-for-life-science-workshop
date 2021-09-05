@@ -3,6 +3,12 @@ title: Optimize The Problem Using Quantum Annealer
 weight: 33 
 ---
 
+Summary as follows:
+
+* simulated annealing
+
+* quantum annealing
+
 1. You need to create an IAM role for Cloud9 service, this IAM role complies with the Principle of least privilege. It contains the following AWS services：
    - AWS IAM
    - AMAZON S3
