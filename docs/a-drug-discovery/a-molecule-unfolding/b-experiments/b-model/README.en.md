@@ -21,14 +21,14 @@ idea is graphically reported in the following figure.
 
 ## Formulation
 
-debug 1.6
+debug 1.7
 
-$\mathcal{N}(0,\,1)$
+$ {N}(0,\,1) $
 
-$$\mathcal{N}(0,\,1)$$
+$$ {N}(0,\,1) $$
 
-When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 
 ## Quantum Annealing
