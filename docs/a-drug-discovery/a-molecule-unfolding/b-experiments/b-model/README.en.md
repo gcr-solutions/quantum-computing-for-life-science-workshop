@@ -21,11 +21,11 @@ idea is graphically reported in the following figure.
 
 ## Formulation
 
-debug 1.2
+debug 1.3
 
 $\mathcal{N}(0,\,1)$
 
-When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
 
 
