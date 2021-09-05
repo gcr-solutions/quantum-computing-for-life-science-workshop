@@ -21,6 +21,9 @@ idea is graphically reported in the following figure.
 
 ## Formulation
 
+When $a \ne 0$
+
+
 ## Quantum Annealing
 
 ## Prepare For Quantum Anealing
