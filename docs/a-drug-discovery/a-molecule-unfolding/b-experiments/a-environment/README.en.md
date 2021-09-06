@@ -5,7 +5,7 @@ weight: 31
 
 ## Create A Sagemaker Notebook
 
-1. Go to AWS CloudForamtion [link](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/template)
+1. Go to AWS CloudForamtion [link](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template)
 
  **Amazon S3 URL**: `https://aws-gcr-rs-sol-workshop-ap-northeast-1-common.s3.ap-northeast-1.amazonaws.com/qc/gcr-sol-qc.yaml`
 

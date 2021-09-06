@@ -2,11 +2,10 @@
 title: Clean Up
 weight: 40
 ---
+1. Go got AWS console: S3 bucket [link](https://console.aws.amazon.com/s3/home?region=ap-northeast-1&region=us-east-1), clean S3 bucket `amazon-braket-gcrqc-<account_id>-<region>`
 
-This section includes following steps:
+2. Go to AWS console: CloudForamtion [link](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template)
 
-- [AWS Cloud9](./cloud9/readme)
-- [Create an IAM role](./create-role/readme)
-- [Attach the IAM role](./attach-role/readme)
-- [Update IAM settings](./update-role-settings/readme)
-- [Create an SSH key](./create-ssh-key/readme)
+3. Delete the CloudForamtion stack `gcr-qc`
+
+![CloudForamtion clean up](/images/qc-cleanup.png)

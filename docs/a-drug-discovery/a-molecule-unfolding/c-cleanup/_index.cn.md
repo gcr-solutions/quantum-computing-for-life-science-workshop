@@ -1,12 +1,10 @@
 ---
-title: 设置工作空间
+title: 清理
 weight: 20
 ---
 
-本节包括以下步骤：
+1. 转到 [link](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template)
 
-- [设置 Cloud9](./cloud9/readme)
-- [创建 IAM 角色](./create-role/readme)
-- [附加 IAM 角色](./attach-role/readme)
-- [更新 IAM 设置](./update-role-settings/readme)
-- [创建 SSH 密钥](./create-ssh-key/readme)
+2. 删除 CloudForamtion stack `gcr-qc`
+
+![CloudForamtion clean up](/images/qc-cleanup.png)
