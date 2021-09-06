@@ -37,6 +37,7 @@ weight: 10
                 "iam:ListRoles",
                 "iam:ListRolePolicies",
                 "iam:GetRole",
+                "iam:UpdateRole",
                 "iam:DeleteRole",
                 "iam:GetRolePolicy",
                 "iam:ListAttachedRolePolicies"
