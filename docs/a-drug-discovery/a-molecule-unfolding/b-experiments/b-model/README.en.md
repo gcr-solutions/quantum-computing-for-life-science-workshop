@@ -27,7 +27,12 @@ idea is graphically reported in the following figure.
  * the sorting method based on the betweeness centrality 
  * many experiments on a ligand dataset compared with Random Search and GeoDock Search
  * dealing with the elaboration of .MOL2 file for rotatable bonds i
- and 
+ In this workshop, we only focus on the constructing of equation for molecule unfolding and 
+ the application of it in quantum annealer. We make the following assumptions:
+ * The elaboration of rotatable bonds is already finished
+ * The fragment is considered as the collections of atoms with fixed space 
+ * The geometric center of the fragment is chosen as the distances of the atoms inside
+ For more details, please refer to the original publication.
 {{% /notice %}}
 
 Suppose the ligand has $ M $ torsions
