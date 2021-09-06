@@ -21,6 +21,17 @@ idea is graphically reported in the following figure.
 
 ## Formulation
 
+{{% notice warning %}}
+ The original paper has some work to make the story of molecular unfolding complete:
+ * elaboration of .MOL2 file for rotatable bonds
+ * the sorting method based on the betweeness centrality 
+ * many experiments on a ligand dataset compared with Random Search and GeoDock Search
+ * dealing with the elaboration of .MOL2 file for rotatable bonds i
+ and 
+{{% /notice %}}
+
+Suppose the ligand has $ M $ torsions
+
 debug 1.7
 
 $ {N}(0,\,1) $
