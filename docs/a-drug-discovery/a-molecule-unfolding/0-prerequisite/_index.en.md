@@ -2,9 +2,9 @@
 title: Prerequisite
 weight: 10
 ---
-1. You must have an AWS account in global region 
+1. An AWS account in global region 
 
-1. You must have an AWS user which can login AWS console with below policy:
+2. An AWS user which can login AWS console with below policy:
 
 ```json
 {
