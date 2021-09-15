@@ -65,7 +65,17 @@ $$ d = \frac{2\pi}{\Delta\theta} $$
 For the whole model, we need $ n = d \times M $ binary variables $ x_{ik} $ to represent all the combinations. 
 For example, for the torsion $ T_i $, its torsion angle $ \theta_i $ can have $ d $ possible values:
 
-$$ \ = \frac{2\pi}{\Delta\theta} $$
+$$ \theta_i = [\theta_i^1,\theta_i^2,\theta_i^3, ..., \theta_i^d] $$
+
+* If we only consider the distance, the final result or configuration may have multiple results from the same torsion as long 
+as this combination means smaller distance. For example, there may be two binary variables of the same torsion, $ T_i $, in the 
+final result:
+
+$$ {\Theta}^{unfold} = [\theta^2_1,  \theta^4_1, ..., \theta^3_M] $$
+
+This cannot happen in real world. $ T_1 $ can only have one of $ d $ angles finally. So we need to integrate the following constraint into our final model:
+
+$$ \displaystyle\sum\limits_{k=1}^{d} x_{ik} = 1 $$
 
 
 
