@@ -35,7 +35,20 @@ idea is graphically reported in the following figure.
  For more details, please refer to the original publication.
 {{% /notice %}}
 
-Suppose the ligand has $ M $ torsions
+Suppose the ligand has $ M $ torsions, from $ T_i to T_M $, and each torsion must have the angle 
+of rotation $\theta$.
+
+# 图，表示一个torsion的旋转, 同表示出旋转角度
+
+The objective of this model is to find the unfolded torsion configuration $ {\Theta}^{unfold} $ which 
+can maximizes the sum of distances $ D(\Theta) $.
+
+$$ {\Theta}^{unfold} = [\theta^{unfold}_1,  \theta^{unfold}_2, ..., ]
+
+
+
+
+that the number of fragments in a molecule is usually double the number of rotatables
 
 debug 1.7
 
