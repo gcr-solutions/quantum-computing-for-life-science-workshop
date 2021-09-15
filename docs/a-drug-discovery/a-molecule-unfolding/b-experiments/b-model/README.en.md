@@ -38,15 +38,44 @@ idea is graphically reported in the following figure.
 Suppose the ligand has $ M $ torsions, from $ T_i to T_M $, and each torsion must have the angle 
 of rotation $\theta$.
 
-# 图，表示一个torsion的旋转, 同表示出旋转角度
+# 很多torsion，每个都有theta
 
 The objective of this model is to find the unfolded torsion configuration $ {\Theta}^{unfold} $ which 
 can maximizes the sum of distances $ D(\Theta) $.
 
-$$ {\Theta}^{unfold} = [\theta^{unfold}_1,  \theta^{unfold}_2, ..., ]
+$$ {\Theta}^{unfold} = [\theta^{unfold}_1,  \theta^{unfold}_2, ..., \theta^{unfold}_M] $$
+
+$$ D(\Theta) = \sum_{a,b}D_{a,b}(\theta)^2 $$
+
+The $ D_{a,b}(\theta)^2 $ is $ || \overrightarrow{a}_0 - R(\theta)\overrightarrow{b}_0||^2  $ . This is 
+the distance between fragment a and b. $ R(\theta) $ is the rotation matrix associated the torsion angle 
+$ \theta $.
+
+# 图，表示一个torsion的旋转, 同表示出旋转角度
+
+Since this is the problem of portfolio optimization, the final configuration can be the combination of any 
+angle of any torsion. However, there are some constraints for applying it to real problem.
+* In terms of the limitation of computation resource, the torsion cannot have the rotation with infinitely small 
+precision. This means that there are limited candidates of rotation angles for each torsion. Suppose we have $ M $ 
+torsions and they have the same precision of rotation angle : $ \Delta\theta $ . This means that we need $ d $ variables 
+for each torsion:
+
+$$ d = \frac{2\pi}{\Delta\theta} $$
+
+For the whole model, we need $ n = d \times M $ binary variables $ x_{ik} $ to represent all the combinations. 
+For example, for the torsion $ T_i $, its torsion angle $ \theta_i $ can have $ d $ possible values:
+
+$$ \ = \frac{2\pi}{\Delta\theta} $$
 
 
 
+
+
+
+However, in this implementation we calculate the distance-pair under different configuration in advance. This 
+means that we use the absolute distance instead:
+
+$$ D(\Theta) = \sum_{a,b}D_{a,b}(\theta)^2 $$
 
 that the number of fragments in a molecule is usually double the number of rotatables
 
