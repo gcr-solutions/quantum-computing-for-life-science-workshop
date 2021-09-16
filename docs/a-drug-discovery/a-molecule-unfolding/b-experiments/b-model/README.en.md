@@ -77,26 +77,17 @@ This cannot happen in real world. $ T_1 $ can only have one of $ d $ angles fina
 
 $$ \displaystyle\sum\limits_{k=1}^{d} x_{ik} = 1 $$
 
+With these two constraints, this problem can be formulated as the high-order unconstrained binary optimization (HUBO).
 
+$$ O(x_{ik}) = A\displaystyle\sum\limits_i (\displaystyle\sum\limits_{k=1}^d x_{ik}-1)^2 - \displaystyle\sum\limits_{a,b} D_{ab} (\theta)^2 $$
 
-
-
-
+The first part is the constraint for each torsion. If one torsion has more than one angles at last, we will add the punishment term $ A $. 
 However, in this implementation we calculate the distance-pair under different configuration in advance. This 
 means that we use the absolute distance instead:
 
-$$ D(\Theta) = \sum_{a,b}D_{a,b}(\theta)^2 $$
+$$ O(x_{ik}) = A\displaystyle\sum\limits_i (\displaystyle\sum\limits_{k=1}^d x_{ik}-1)^2 - \displaystyle\sum\limits_{a,b} |D_{ab} (\theta)| $$
 
-that the number of fragments in a molecule is usually double the number of rotatables
 
-debug 1.7
-
-$ {N}(0,\,1) $
-
-$$ {N}(0,\,1) $$
-
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 
 ## Quantum Annealing
