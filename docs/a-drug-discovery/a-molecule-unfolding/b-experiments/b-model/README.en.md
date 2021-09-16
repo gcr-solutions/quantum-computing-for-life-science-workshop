@@ -87,58 +87,30 @@ means that we use the absolute distance instead:
 
 $$ O(x_{ik}) = A\displaystyle\sum\limits_i (\displaystyle\sum\limits_{k=1}^d x_{ik}-1)^2 - \displaystyle\sum\limits_{a,b} |D_{ab} (\theta)| $$
 
-
-
+### 在这里描述代码
 
 ## Quantum Annealing
 
-## Prepare For Quantum Anealing
+The quantum annealing (QA) can be seen as a variation of the simulated annealing (SA). Both QA and SA are meta-heuristic technique for address 
+challenging combinatorial problems. QA uses the quantum fluctuation to explore the configuration space instead of thermal effects. Here, we use 
+Amazon Braket API to access the Canadian company D-Wave. This annealer is implemented using superconductive qubits. Natively, the quadratic 
+unconstrained binary optimization (QUBO) can be solved using quantum annealer:
 
+$$ O(x) = \displaystyle\sum\limits_i h_i x_i + \displaystyle\sum_{i>j} J_{i,j} x_i x_j $$
 
+In QUBO form, $ x_i \in \{0, 1\} $ are binary variables. We can consider it as the angle that we choose for a particular torsion. $h_i$ and $J_{i,j}$
+ can be considered as the values encoding the optimization task when we use corresponding angles. However, in our task, it is common that there are 
+ more than one torsion between fragments, we model it as the high-order quadratic unconstrained binary optimization (HUBO) problem:
 
+$$ O(x) = \displaystyle\sum\limits_i \alpha_i x_i + \displaystyle\sum_{i,j} \beta_{i,j} x_i x_j + \displaystyle\sum_{i,j,k} \gamma_{i,j,k} x_i x_j x_k + ... $$
 
+### 这里有图，描述多个torsion的情况
 
+It is often possible to convert HUBOs to QUBOs by using some tricks, 
+like adding new ancillary binary variables to replace high-order term. 
+In practice, we use the API $$ make\_quadratic() $$ in D-Wave software package to 
+make this conversion.
 
-## Create new Cloud9 IDE environment
+### 这里有图，描述构建HUBO，用QUBO进行convert
 
-1. Go to [AWS Cloud9 Console](https://ap-northeast-1.console.aws.amazon.com/cloud9)
-2. Use the region drop list to select **Asia Pacific (Tokyo)ap-northeast-1**
-3. Click **Create environment** button to create an cloud9 environment
-
-    ![Create Cloud9 Environment](/images/create-cloud9-start.png)
-
-4. Name it `gcr-rs-dev-workshop`, click **Next**
-5. If you choose the following regions to proceed workshop, please click **Network Settings (Advanced)** in the **configure settings**, and select the preference settings of the corresponding region in **Subnet**
-
-   |Region |Subnet |
-   |--- |--- |
-   |us-west-2|Default in us-west-2a |
-   |ap-south-1|Default in ap-south-1a |
-   |ap-northeast-2|Default in ap-northeast-2a |
-   |ca-central-1|Default in ca-central-1a |
-   |sa-east-1|Default in sa-east-1a |
-   
-   If you did not select the above region, keep all the default options, and click **Next** and **Create Environment**
-
-   {{% notice info %}}
-   This will take about 2 minutes to provision
-   {{% /notice %}}
-
-   When it comes up, the cloud9 console environment should looks like below:
-
-   ![Cloud9 Welcome](/images/cloud9-welcome.png)
-
-### Configure Cloud9 IDE environment
-
-When the environment comes up, customize the environment by:
-
-1. Close the **welcome page** tab, close the **Quick Start** tab, close **lower work area** tab
-
-    ![Cloud9 Close](/images/cloud9-close.png)
-
-2. Open a new **terminal** tab in the main work area.
-
-    ![Cloud9 Open Terminal](/images/cloud9-open-terminal.png)
-
-3. Keep the AWS Cloud9 IDE opened in a browser tab throughout this workshop as we’ll use it for activities like using the AWS CLI and running Bash scripts.
-
+Congratulations! We have already prepared the model and it is time to test it.

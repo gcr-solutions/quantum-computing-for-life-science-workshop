@@ -3,6 +3,30 @@ title: Optimize The Problem Using Quantum Annealer
 weight: 33 
 ---
 
+
+
+
+
+
+
+
+
+   |Region |Subnet |
+   |--- |--- |
+   |us-west-2|Default in us-west-2a |
+   |ap-south-1|Default in ap-south-1a |
+   |ap-northeast-2|Default in ap-northeast-2a |
+   |ca-central-1|Default in ca-central-1a |
+   |sa-east-1|Default in sa-east-1a |
+
+   {{% notice info %}}
+   This will take about 2 minutes to provision
+   {{% /notice %}}
+
+   ![Cloud9 Welcome](/images/cloud9-welcome.png)
+
+    Close the **welcome page** tab, close the **Quick Start** tab, close **lower work area** tab
+
 Summary as follows:
 
 * simulated annealing
