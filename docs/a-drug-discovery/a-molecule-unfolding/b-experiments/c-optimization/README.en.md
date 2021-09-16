@@ -58,55 +58,38 @@ This is interesting that we cannot get the similar results as the publication ex
 
 ## Analyze The Efficiency
 
-
-   {{% notice info %}}
-   This will take about 2 minutes to provision
-   {{% /notice %}}
-
-   ![Cloud9 Welcome](/images/cloud9-welcome.png)
-
-    Close the **welcome page** tab, close the **Quick Start** tab, close **lower work area** tab
-
-Summary as follows:
-
-* simulated annealing
-
-* quantum annealing
-
-1. You need to create an IAM role for Cloud9 service, this IAM role complies with the Principle of least privilege. It contains the following AWS services：
-   - AWS IAM
-   - AMAZON S3
-   - AMAZON EKS
-   - AWS SecretsManager
-   - AWS CodeBuild
-   - AWS EFS
-   - AWS EC2
-   - AWS Elasticache
-   - AWS CloudWatch
-   - AWS AutoScaling
-   - AWS SSM
-   - AWS KMS
-   - AWS AutoScaling
-   - AWS CloudFormation
-   
-2. Click the [Link](https://github.com/gcr-solutions/recommender-system-dev-workshop-code/blob/main/scripts/role/gcr-rs-role.json), Copy the content in the `gcr-rs-role.json` file.
-
-3. Click the [Create Policy Link](https://console.aws.amazon.com/iam/home#/policies$new?step=edit), paste the content in the JSON bar. **Attention**: You need to replace `<account_id>` with your AWS Account ID. And click **Next: Tags**.
-
-   ![CREATE POLICY](/images/create-iam-policy.png)
-   
-4. Enter `gcr-rs-dev-workshop-admin-policy` in the Name bar, and click **Create Policy**.
-   
-5. Click [Create IAM Role Link](https://console.aws.amazon.com/iam/home#/roles$new?step=review&commonUseCase=EC2%2BEC2&selectedUseCase=EC2). Make sure the **AWS Service** and **EC2** are selected，and click **Next: Permissions**.
-
-   ![IAM Role EC2](/images/iam-role-ec2.png)
-
-6. Search `gcr-rs-dev-workshop-admin-policy` and select it，then click **Next: Tags**.
-
-   ![IAM Role Least Permission](/images/iam-role-leastPermission.png)
-
-7. Enter `gcr-rs-dev-workshop-admin` in the Name bar，Click **Create role**.
-
-   ![IAM Role Created](/images/iam-role-name-create.png)
+In this workshop, we have test the efficiency of model with different complexity, $ M * d $, on different devices. We test SA on ml.c5.4xlarge, 
+ml.m5.4xlarge, and ml.r5.4xlarge. We also test QA on DW_2000Q_6 and Advantage_system1.1. The result shows that, if the tasks run with the same 
+number of shots (1000), the quantum annealer has really nice scaling ability for solving combinatorial problems. The Advantage_system1.1 only needs 
+3 minutes to solve the QUBO model ($M=5, d=8$), while all the classic computing instance needs over 3 hours. However, there's suspicion that there is 
+still much space for improvement in the SA implemented by D-Wave. More strict bench mark is needed.
 
 
+### 性能比较图 - 1
+
+If we change the number of shots for SA to 1, we get another group data for efficiency. 
+
+### 性能比较图 - 2
+
+
+## Carry Out The Batch Test
+
+You can also conduct this test yourself. 
+
+Open the terminal and run the following script to create the following resource:
+
+* ecr repository
+* sagemaker processing jobs
+* step function
+
+```sh
+cd /home/ec2-user/
+```
+
+Change the config file the value you want:
+
+Build the image:
+
+Switch to your step function console and click the run icon:
+
+Read the output of data
