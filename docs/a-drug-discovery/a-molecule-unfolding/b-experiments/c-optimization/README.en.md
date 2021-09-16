@@ -1,12 +1,17 @@
 ---
-title: Optimize The Problem Using Quantum Annealer
+title: Optimization And Analysis
 weight: 33 
 ---
 
+## Adjust Parameters for Optimization
+
+## Analyze 
 
 
 
-
+1. 为启动优化器做准备
+2. 优化可以调整的参数
+3. carry out your own experiment (cost estimate)
 
 
 

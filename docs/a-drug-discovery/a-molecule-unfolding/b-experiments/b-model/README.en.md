@@ -1,5 +1,5 @@
 ---
-title: Build Models 
+title: Build The Model
 weight: 32
 ---
 
