@@ -3,11 +3,22 @@ title: Optimization And Analysis
 weight: 33 
 ---
 
-## Adjust Parameters for Optimization
+## Adjust Parameters For Optimization
+
+We have our QUBO model for experiments. There are some parameters we should define for optimization.
+
+| Parameter | Description | Value |
+|--- |--- |--- |
+|A | penalty scalar |1000 |
+|cost_strength | energy penalty of make_quadratic() |5|
+|n_c | number of shots for simulated annealing in local instance | 1000|
+|n_q | number of shots for quantum annealing in QPU | 1000|
+|M | number of torsions for quantum annealing in QPU | 1000|
+|D| num of shots for quantum annealing in QPU | 1000|
+
+代码图片，表示设置的用于实验的参数
 
 ## Analyze 
-
-
 
 1. 为启动优化器做准备
 2. 优化可以调整的参数
