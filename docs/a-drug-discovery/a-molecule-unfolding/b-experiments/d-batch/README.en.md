@@ -1,5 +1,5 @@
 ---
-title: Bach BatchExperiment
+title: Batch Experiment
 weight: 41
 ---
 

@@ -8,3 +8,4 @@ This section helps you carry out experiments using quantum annealer and includes
 - [Prepare Environments](./a-environment/readme)
 - [Build The Model](./b-model/readme)
 - [Optimization And Analysis](./c-optimization/readme)
+- [Batch Expriment](./d-batch/readme)
