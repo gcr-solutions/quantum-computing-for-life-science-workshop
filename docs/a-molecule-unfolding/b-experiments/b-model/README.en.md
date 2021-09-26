@@ -57,7 +57,7 @@ The $ D_{a,b}(\theta)^2 $ is $ || \overrightarrow{a}_0 - R(\theta)\overrightarro
 the distance between fragment a and b. $ R(\theta) $ is the rotation matrix associated the torsion angle 
 $ \theta $.
 
-![Single Torsion](/images/single-torsion.png)
+![Two Frag One Tor](/images/two-frag-one-torsion.png)
 
 Since this is the problem of portfolio optimization, the final configuration can be the combination of any 
 angle of any torsion. However, there are some constraints for applying it to real problem.
@@ -93,7 +93,7 @@ means that we use the absolute distance instead:
 
 $$ O(x_{ik}) = A\displaystyle\sum\limits_i (\displaystyle\sum\limits_{k=1}^d x_{ik}-1)^2 - \displaystyle\sum\limits_{a,b} |D_{ab} (\theta)| $$
 
-### 在这里描述代码
+## The code for model
 
 ## Quantum Annealing
 
@@ -110,12 +110,11 @@ In QUBO form, $ x_i \in \{0, 1\} $ are binary variables. We can consider it as t
 
 $$ O(x) = \displaystyle\sum\limits_i \alpha_i x_i + \displaystyle\sum_{i,j} \beta_{i,j} x_i x_j + \displaystyle\sum_{i,j,k} \gamma_{i,j,k} x_i x_j x_k + ... $$
 
-### 这里有图，描述多个torsion的情况
+![Two Frag Mul Tor](/images/two-frag-multiple-torsion.png)
 
 It is often possible to convert HUBOs to QUBOs by using some tricks, 
 like adding new ancillary binary variables to replace high-order term. 
-In practice, we use the API $$ make\_quadratic() $$ in D-Wave software package to 
-make this conversion.
+In practice, we use the API $ make\_quadratic() $ in D-Wave software package to make this conversion.
 
 ### 这里有图，描述构建HUBO，用QUBO进行convert
 
