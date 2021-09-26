@@ -25,17 +25,17 @@ idea is graphically reported in the following figure.
 
  The original paper has some work to make the story of molecular unfolding complete:
 
- * elaboration of .MOL2 file for rotatable bonds
- * the sorting method based on the betweeness centrality 
- * many experiments on a ligand dataset compared with Random Search and GeoDock Search
- * dealing with the elaboration of .MOL2 file for rotatable bonds i
+ 1. elaboration of .MOL2 file for rotatable bonds
+ 2. the sorting method based on the betweeness centrality 
+ 3.  many experiments on a ligand dataset compared with Random Search and GeoDock Search
+ 4. dealing with the elaboration of .MOL2 file for rotatable bonds i
 
  In this workshop, we only focus on the constructing of equation for molecule unfolding and 
  the application of it in quantum annealer. We make the following assumptions:
 
- * The elaboration of rotatable bonds is already finished
- * The fragment is considered as the collections of atoms with fixed space 
- * The geometric center of the fragment is chosen as the distances of the atoms inside
+ 1. The elaboration of rotatable bonds is already finished
+ 2. The fragment is considered as the collections of atoms with fixed space 
+ 3. The geometric center of the fragment is chosen as the distances of the atoms inside
 
  For more details, please refer to the original publication.
 
@@ -45,8 +45,6 @@ Suppose the ligand has $ M $ torsions, from $ T_i $ to $ T_M $, and each torsion
 of rotation $\theta$.
 
 ![Multiple Torsion](/images/multiple-torsion.png)
-
-# 很多torsion，每个都有theta
 
 The objective of this model is to find the unfolded torsion configuration $ {\Theta}^{unfold} $ which 
 can maximizes the sum of distances $ D(\Theta) $.
@@ -59,7 +57,7 @@ The $ D_{a,b}(\theta)^2 $ is $ || \overrightarrow{a}_0 - R(\theta)\overrightarro
 the distance between fragment a and b. $ R(\theta) $ is the rotation matrix associated the torsion angle 
 $ \theta $.
 
-# 图，表示一个torsion的旋转, 同表示出旋转角度
+![Single Torsion](/images/single-torsion.png)
 
 Since this is the problem of portfolio optimization, the final configuration can be the combination of any 
 angle of any torsion. However, there are some constraints for applying it to real problem.
