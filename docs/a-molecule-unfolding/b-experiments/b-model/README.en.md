@@ -22,21 +22,29 @@ idea is graphically reported in the following figure.
 ## Formulation
 
 {{% notice warning %}}
+
  The original paper has some work to make the story of molecular unfolding complete:
+
  * elaboration of .MOL2 file for rotatable bonds
  * the sorting method based on the betweeness centrality 
  * many experiments on a ligand dataset compared with Random Search and GeoDock Search
  * dealing with the elaboration of .MOL2 file for rotatable bonds i
+
  In this workshop, we only focus on the constructing of equation for molecule unfolding and 
  the application of it in quantum annealer. We make the following assumptions:
+
  * The elaboration of rotatable bonds is already finished
  * The fragment is considered as the collections of atoms with fixed space 
  * The geometric center of the fragment is chosen as the distances of the atoms inside
+
  For more details, please refer to the original publication.
+
 {{% /notice %}}
 
-Suppose the ligand has $ M $ torsions, from $ T_i to T_M $, and each torsion must have the angle 
+Suppose the ligand has $ M $ torsions, from $ T_i $ to $ T_M $, and each torsion must have the angle 
 of rotation $\theta$.
+
+![Multiple Torsion](/images/multiple-torsion.png)
 
 # 很多torsion，每个都有theta
 
