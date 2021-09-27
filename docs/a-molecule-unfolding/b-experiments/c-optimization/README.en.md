@@ -37,7 +37,7 @@ After setting the parameters, we can run the optimization on classic device and 
 After some time, we get the results. As the result indicates, the best answer of quantum annealer only 
 occurs once.
 
-### 量子退火只出现一次结果的图片
+![OneTimeQA](/images/one-time-qa.png)
 
 This does not always indicate an error. It is actually the characteristic of the problem or how the problem 
 is formulated. Because we have different linear and quadratic terms that vary by many orders of magnitude. If we 
