@@ -10,13 +10,15 @@ We have our QUBO model for experiments. There are some parameters we should defi
 | Parameter | Description | Value |
 |--- |--- |--- |
 |A | penalty scalar |1000 |
-|cost_strength | energy penalty of make_quadratic() |5|
+|hubo_qubo_val | energy penalty of make_quadratic() |5|
 |n_c | number of shots for simulated annealing in local instance | 1000|
 |n_q | number of shots for quantum annealing in QPU | 1000|
 |M | number of torsions for molecule unfolding| [1, all the torsions] |
 |D| angle precision of rotation| 8|
 
-### 代码图片，表示设置的用于实验的参数
+We use the following code to set the parameters:
+
+![Parameter](/images/parameter.png)
 
 ## Run Optimizers
 
