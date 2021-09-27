@@ -104,6 +104,23 @@ the variables using the following code:
 The above code indicates that we have 4 torsions from $ x_1_? to x_4_? $. Each torsion has four optional rotation angles from $ 0^o to 270^o $. For example, $ x_3_2 $ means that the torsion 3 rotates 
 $ 180^o $.
 
+For constraints, we use the following code to implement: 
+
+![Constraint](/images/constraint.png)
+
+As we analyze before, the model does not which variables belong to 
+the same physical torsion. For example, $ x_1_1 , x_1_2, x_1_3 $ 
+and $ x_1_4 $ belong to the same torsion. The model cannot let only 
+one of them become $ 1 $. If the model choose multiple of them, we 
+must punish it. As the figure shown, when the model choose more than 
+one variables of $x_1_?$ to become $ 1 $, we give it the punishment 
+term $ 600 $. 
+
+Most importantly, we use $ calc_distance_func $ to calculate
+$ |D_{ab} (\theta)| $ under different $ \theta $.
+
+![Distance](/images/distance.png)
+
 ## Quantum Annealing
 
 The quantum annealing (QA) can be seen as a variation of the simulated annealing (SA). Both QA and SA are meta-heuristic technique for address 
