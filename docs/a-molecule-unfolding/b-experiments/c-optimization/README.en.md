@@ -47,7 +47,7 @@ However, these answers usually break the constraints. For more information about
 
 After that, we need some postprocessing to get the results. What we really want are the desired angles of all the torsion.
 
-### postprocessing 图片
+![Postprocess](/images/PostProcess.png)
 
 We test different values of $M$, and we find that when $M > 5$, the quantum annealer can not embed it into its quantum circuit. When 
 $M < 3$, we can get comparable results from quantum annealer. In other cases, the results from the quantum annealer are not stable. 
