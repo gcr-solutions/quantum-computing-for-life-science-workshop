@@ -24,9 +24,9 @@ We use the following code to set the parameters:
 
 After setting the parameters, we can run the optimization on classic device and quantum device.
 
-### 普通优化图片
+### Classical Optimizer for QUBO
 
-### 量子优化图片
+### Quantum Optimizer for QUBO
 
 ## Analyze The Quality
 

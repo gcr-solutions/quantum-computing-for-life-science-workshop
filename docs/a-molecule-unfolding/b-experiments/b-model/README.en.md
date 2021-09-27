@@ -142,6 +142,10 @@ It is often possible to convert HUBOs to QUBOs by using some tricks,
 like adding new ancillary binary variables to replace high-order term. 
 In practice, we use the API $ make \_ quadratic() $ in D-Wave software package to make this conversion.
 
-### code for qubo
+![HUBO QUBO](/images/hubo-qubo.png)
+
+As the image shown, some high-order term of HUBO, like $ ('x\_1\_1','x\_2\_1','x\_3\_1') $, have been 
+transformed to binary terms in QUBO. We only highlight some of them.
+
 
 Congratulations! We have already prepared the model and it is time to test it.
