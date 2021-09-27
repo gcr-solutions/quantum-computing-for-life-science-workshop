@@ -26,7 +26,11 @@ After setting the parameters, we can run the optimization on classic device and 
 
 ### Classical Optimizer for QUBO
 
+![Classical](/images/classical.png)
+
 ### Quantum Optimizer for QUBO
+
+![Quantum](/images/quantum.png)
 
 ## Analyze The Quality
 
