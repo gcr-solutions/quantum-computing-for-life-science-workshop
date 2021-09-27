@@ -53,8 +53,8 @@ $$ {\Theta}^{unfold} = [\theta^{unfold}_1,  \theta^{unfold}_2, ..., \theta^{unfo
 
 $$ D(\Theta) = \sum_{a,b}D_{a,b}(\theta)^2 $$
 
-The $ D_{a,b}(\theta)^2 $ is $ || \overrightarrow{a}_0 - R(\theta)\overrightarrow{b}_0||^2  $ . This is 
-the distance between fragment a and b. $ R(\theta) $ is the rotation matrix associated the torsion angle 
+The $ D_{a,b}(\theta)^2 $ is $ || \overrightarrow{a}_0 - R(\theta)\overrightarrow{b}_0||^2  $ . 
+This is the distance between fragment a and b. $ R(\theta) $ is the rotation matrix associated the torsion angle 
 $ \theta $.
 
 ![Two Frag One Tor](/images/two-frag-one-torsion.png)
@@ -93,7 +93,16 @@ means that we use the absolute distance instead:
 
 $$ O(x_{ik}) = A\displaystyle\sum\limits_i (\displaystyle\sum\limits_{k=1}^d x_{ik}-1)^2 - \displaystyle\sum\limits_{a,b} |D_{ab} (\theta)| $$
 
-## The code for model
+## The Code for Model
+
+We have implemented this model in **protein/ligand-unfolding/ligand_unfolding.ipynb**.
+Suppose we have finished the parameter setting, we first initialize 
+the variables using the following code:
+
+![Var Init](/images/var-init.png)
+
+The above code indicates that we have 4 torsions from $ x_1_? to x_4_? $. Each torsion has four optional rotation angles from $ 0^o to 270^o $. For example, $ x_3_2 $ means that the torsion 3 rotates 
+$ 180^o $.
 
 ## Quantum Annealing
 
@@ -114,8 +123,8 @@ $$ O(x) = \displaystyle\sum\limits_i \alpha_i x_i + \displaystyle\sum_{i,j} \bet
 
 It is often possible to convert HUBOs to QUBOs by using some tricks, 
 like adding new ancillary binary variables to replace high-order term. 
-In practice, we use the API $ make\_quadratic() $ in D-Wave software package to make this conversion.
+In practice, we use the API $ make \_ quadratic() $ in D-Wave software package to make this conversion.
 
-### 这里有图，描述构建HUBO，用QUBO进行convert
+### code for qubo
 
 Congratulations! We have already prepared the model and it is time to test it.
