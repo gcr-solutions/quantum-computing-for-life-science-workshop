@@ -36,8 +36,16 @@ weight: 41
 
 8. Run the StepFunctions
   
-  Click button "Start exection", keep default input no change, then clicke "Start exection"
+  Click button "Start execution", keep default input, then click "Start execution"
 
  ![Run batchstepfuncs](/images/qc-batch-run-stepfunc.png)
+
+  The Step Funcstions are running like this:
+
  ![batchstepfuncs execution ](/images/qc-batch-exec-stepfunc.png)
+
+
+   {{% notice info %}}
+   The Step Funcstions will take about 25 minutes to complete
+   {{% /notice %}} 
 
