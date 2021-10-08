@@ -60,20 +60,20 @@ $ \theta $.
 ![Two Frag One Tor](/images/two-frag-one-torsion.png)
 
 Since this is the problem of portfolio optimization, the final configuration can be the combination of any 
-angle of any torsion. However, there are some constraints for applying it to real problem.
-* In terms of the limitation of computation resource, the torsion cannot have the rotation with infinitely small 
+angle of any torsion. However, there are some constraints for applying it to real problem: 
+
+1. In terms of the limitation of computation resource, the torsion cannot have the rotation with infinitely small 
 precision. This means that there are limited candidates of rotation angles for each torsion. Suppose we have $ M $ 
 torsions and they have the same precision of rotation angle : $ \Delta\theta $ . This means that we need $ d $ variables 
 for each torsion:
 
 $$ d = \frac{2\pi}{\Delta\theta} $$
-
 For the whole model, we need $ n = d \times M $ binary variables $ x_{ik} $ to represent all the combinations. 
 For example, for the torsion $ T_i $, its torsion angle $ \theta_i $ can have $ d $ possible values:
 
 $$ \theta_i = [\theta_i^1,\theta_i^2,\theta_i^3, ..., \theta_i^d] $$
 
-* If we only consider the distance, the final result or configuration may have multiple results from the same torsion as long 
+2. If we only consider the distance, the final result or configuration may have multiple results from the same torsion as long 
 as this combination means smaller distance. For example, there may be two binary variables of the same torsion, $ T_i $, in the 
 final result:
 
